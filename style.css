@@ -1,118 +1,422 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-:root{
-    --comman-padding : 0 8vw;
+  }
+  
+  :root {
+    --common-padding: 0 8vw;
     --primary-brand-color: #c2f578;
     --primary-text-color: #000;
-}
-
-/* Header */
-
-header{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* primary color #C2F578 */
+  
+  /* header */
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 12vh;
-    padding: var(--comman-padding);
-}
-.header-left{
+    padding: var(--common-padding);
+  }
+  
+  .header-left {
     display: flex;
     align-items: center;
     gap: 6vw;
-
-}
-
-.header-left a{
+  }
+  
+  .header-left a {
     display: flex;
     align-items: center;
-    color:var(--primary-text-color);
-    text-orientation: none;
-}
-
-.header-left .logo-container{
-    font-size: 28px;
-    padding-right: 12px;
-}
-
-.header-left a.courses{
-    color: #3E3E3E;
-}
-
-.header-left .logo-container{
-    font-size: 28px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+  }
+  .header-left a svg {
+    margin-right: 24px;
+  }
+  .header-left a.courses {
+    color: #3e3e3e;
+  }
+  .header-left .logo-container {
+    font-size: 24px;
     font-weight: 700;
-}
-
-.header-right button:hover{
-    background-color: white;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.header-right button{
-    border:none;
-    background-color: #000;
+  }
+  
+  .header-right button {
+    border: none;
+    background: black;
     color: white;
     padding: 8px 12px;
     border-radius: 4px;
-}
-
-.header-right .SignUp{
+    cursor: pointer;
+  }
+  .header-right button:hover {
+    background-color: #191919;
+  }
+  .signup-btn {
     margin-right: 24px;
-}
-
-/*Header end */
-
-/* main  start */
-/* Hero Section Start */
-
-.main{
-    padding: var(--comman-padding);
+  }
+  /* header end */
+  
+  /* main start */
+  main {
     display: flex;
     justify-content: space-between;
+    padding: var(--common-padding);
     width: 100%;
     height: 88vh;
-}
-.main-left {
+    margin-bottom: 100px;
+  }
+  
+  .main-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: start;
-}
-.main-right{
+  }
+  .main-heading {
+    font-size: 68px;
+  }
+  .main-highlight {
+    font-weight: bold;
+    position: relative;
+  }
+  .border-b {
+    position: absolute;
+    bottom: -16px;
+  }
+  .main-desc {
+    color: #96989a;
+  }
+  
+  .main-left button {
+    border: none;
+    color: var(--primary-text-color);
+    background-color: var(--primary-brand-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  .main-right {
     width: 50%;
     display: flex;
-    justify-content: end;
-    align-items: end;
-}
-.main-right img{
+    justify-content: flex-end;
+    background: rgb(194, 245, 120);
+    background: radial-gradient(
+      circle,
+      rgba(194, 245, 120, 1) 0%,
+      rgba(148, 187, 233, 0) 70%
+    );
+  }
+  .main-right img {
     width: 90%;
-}
+    position: relative;
+  }
+  .main-right .left-icon{
+    position: absolute;
+    padding-right: 500px;
+    padding-top: 80px;
 
-.main-left .main-heading{
-    font-size: large;
-    color:#000;
-    font-size: 68px;
+  }
+  /* main end */
+  .Company{
+    padding: var(--common-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Company .Company-heading{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 28px;
+    color: #565656;
+  }
+
+  .Company .Company-logo{
+    display: flex;
+    justify-content: space-evenly;
+  }
+.Professionals{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 28px;
+    height: 25%;
+    color:#565656
 }
-.main-highlight{
+.Professionals .Professional-word{
     font-weight: bold;
+ 
+}
+.container-main{
+    padding: var(--common-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+    gap: 6vw;
+    height:332px;
+}
+.container-main .container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    width: 33%;
+    height: 100%;
+    background: #ECEDEF;
+    border-radius: 30px;
 }
 
-.main-left .main-desc{
-    color:#96989A
+
+.container-main .container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    width: 33%;
+    background: #ECEDEF;
+    border-radius: 30px;
 }
 
-.main-left button{
+.container-main .container-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7vh;
+  width: 33%;
+  background: #ECEDEF;
+  border-radius: 30px;
+  height: 254px;
+}
+.container-3 .App-Development{
+    margin-top: -39px;
+}
+.container-1 button{
+     border: none;
+     background-color: var(--primary-brand-color);
+     border-radius: 8px ;
+     width: 100px;
+    height: 45px;
+    padding: 5px;
+    margin-bottom: 20px
+}
+.container-2 button{
     border: none;
     background-color: var(--primary-brand-color);
-    padding: 4px 12px;
+    border-radius: 8px ;
+    width: 100px;
+   height: 32px;
+   padding: 5px;
+   margin-bottom: 6px;
 }
- 
-/* Hero Section end */
+.container-3 button{
+    border: none;
+    background-color: var(--primary-brand-color);
+    border-radius: 8px ;
+    width: 100px;
+   height: 32px;
+   padding: 5px;
+}
+.computer-logo{
+    padding-left: 5px;
+}
 
+/* Solution Section */
+.Solution {
+  display: flex;
+  padding: 0 8vw; /* Padding for the whole content */
+  gap: 20px; /* Space between the image and the right content */
+  align-items: center;
+  margin-top: 100px;
+}
 
+.image-section {
+  flex: 1; /* Image takes up 50% of the container */
+}
 
+.image-section img {
+  width: 100%; /* Makes the image occupy the full width of its container */
+  height: auto;
+}
+
+.information-section-main {
+  flex: 1; /* Right content section takes the remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 56px;
+  gap:20px;
+}
+
+.text-1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.information-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between each logo-text pair */
+}
+
+.container-logo-2,
+.container-logo-4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-logo-3{
+  display: flex;
+    align-items: center;
+    gap: 47px;
+    margin-left: 39px;
+}
+
+.container-logo-3 img .svg-2{
+  background-color: lightgray;
+    height: 38px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.container-logo-2 img,
+.container-logo-3 img,
+.container-logo-4 img {
+  width: 100px;
+  height: auto;
+}
+
+.flexible-learning-link,
+.expert-instructors,
+.interactive-community {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.join-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-main-div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  gap:56px;
+  /* justify-content: center; */
+  align-items: center; 
+}
+.footer-main-div .footer-div-1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 0 8vw;
+}
+.subdiv-1 {
+  display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width:50%;
+}
+.subdiv-1 a{
+  display: flex; 
+  display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color:var(--primary-text-color);
+} 
+.subdiv-1 .Subscribe{
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+.subdiv-1 .comment{
+  color: #96989a ;
+}
+.subdiv-1 .email{
+  width: 446px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.button-div{
+  position: relative;
+}
+.subdiv-1 .Subscribe-button{
+  border: none;
+  background-color: #c2f578;
+  height: 31px;
+  width: 80px;
+  border-radius: 9px;
+  font-weight: bold;
+  color: #565656;
+  position: absolute;
+  right:54px; 
+  top: 4px;
+} 
+.subdiv-2{
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-left: 300px; 
+  padding-bottom: 23px;
+  width:30%;
+
+}
+.subdiv-2 .business{
+  font-weight: bold;
+ color: #191919;
+}
+
+.subdiv-2 a{
+  text-decoration: none;
+  color: #565656;
+}
+
+.subdiv-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 55px;
+  width:20%;
+}
+.subdiv-3 .careers{
+  text-decoration: none;
+  font-weight: bold;
+  color:black;
+
+}
+.subdiv-3 a{
+  text-decoration: none;
+  color: #565656;
+}
+.footer-div-2{
+  display: flex;
+  align-items: start;
+}
+.footer-div-2 p{
+  text-align: left;
+  font-weight: 900;
+}
